@@ -1,0 +1,40 @@
+.signupSection {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+
+  .signupInfo {
+    width: 400px;
+    margin: 30px auto;
+
+    .signupInner {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      text-align: left;
+
+      input {
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: #111;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #fff;
+          border: 1px solid #111;
+          font-weight: bold;
+          color: #111;
+        }
+      }
+    }
+  }
+}

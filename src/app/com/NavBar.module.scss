@@ -1,0 +1,39 @@
+.headWrap {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top:0; left:0;
+  z-index: 10;
+  background-color: transparent;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  width: 100%;
+  height: 100%;
+
+  img {
+    display: block;
+    width: 150px;
+    color: #111;
+  }
+
+  .nav {
+    display: flex;
+    gap: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
+
+    .logoutBtn {
+      border: none;
+      background-color: transparent;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
+    }
+  }
+}
