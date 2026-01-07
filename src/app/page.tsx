@@ -2,17 +2,12 @@
 import React from 'react'
 import SlidePage from './com/SlidePage'
 import styles from './page.module.css'
+import ChartPage from './com/ChartPage'
 
 const page = () => {
   return (
-    <section>
-      <div className={`${styles.panel} ${styles.panel1}`} data-panel>
-        <SlidePage />
-      </div>
-      
-      {/* <div className={`${styles.panel} ${styles.panel2}`} data-panel>
-        <h1>두번째 섹션</h1>
-      </div> */}
+    <section className={`${styles.panel} ${styles.panel1}`} data-panel>
+      <SlidePage />
     </section>
   )
 }

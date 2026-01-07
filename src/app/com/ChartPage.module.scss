@@ -1,0 +1,31 @@
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.container h1 {
+  font-size: clamp(25px, 3.5vw, 45px);
+  margin-bottom: 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card {
+  /* border: 1px solid orange; */
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+.chartBox {
+  height: 280px;
+}
+
+// @media screen and (max-width: 768px) {
+//   .grid {grid-template-columns: 1fr;}
+// }
