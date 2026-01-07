@@ -28,9 +28,9 @@ const SlidePage = () => {
   const rootRef = useRef<HTMLDivElement | null>(null)
 
   const slides: Slide[] = [
-    {id: 1, title: 'Next', subtitle: 'login-logout-signup 기능 구현 / GCP, DB 연동', type: 'video', src: '/imgs/world01.mp4'},
-    {id: 2, title: 'GSAP', subtitle: '애니메이션 라이브러리 활용 / 글자 애니메이션 구현 / 스크롤 이벤트 구현', type: 'video', src: '/imgs/world02.mp4'},
-    {id: 3, title: 'Swiper', subtitle: 'Slide 구현 / ScrollTrigger', type: 'video', src: '/imgs/world03.mp4'},
+    {id: 1, title: 'Next', subtitle: 'login-logout-signup 기능 구현 / GCP, DB 연동', type: 'video', src: '/imgs/video01.mp4'},
+    {id: 2, title: 'GSAP', subtitle: '애니메이션 라이브러리 활용 / 글자 애니메이션 구현 / 스크롤 이벤트 구현', type: 'video', src: '/imgs/video02.mp4'},
+    {id: 3, title: 'Swiper', subtitle: 'Slide 구현 / ScrollTrigger', type: 'video', src: '/imgs/video03.mp4'},
   ]
 
   const cards = [
@@ -101,7 +101,7 @@ const SlidePage = () => {
               <SwiperSlide key={item.id} className={styles.slide}>
                 {item.type === 'image' 
                 ? (<img src={item.src} alt={item.title} />) 
-                : (<video  autoPlay muted loop playsInline className={styles.video}>
+                : (<video  autoPlay muted loop playsInline preload='auto' className={styles.video}>
                       <source src={item.src} type="video/mp4" />
                     </video>)
                 }
