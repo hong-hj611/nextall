@@ -90,7 +90,7 @@ const SlidePage = () => {
           navigation={true}
           pagination={{clickable: true}}  // navigation 클릭 작동 되도록
           autoplay={{
-            delay: 10000,
+            delay: 6000,
             disableOnInteraction: false,  // autoplay 도중 navigation 클릭후 다시 autoplay되도록 설정   
           }}
           className={styles.swiper}
@@ -101,7 +101,9 @@ const SlidePage = () => {
               <SwiperSlide key={item.id} className={styles.slide}>
                 {item.type === 'image' 
                 ? (<img src={item.src} alt={item.title} />) 
-                : (<video src={item.src} autoPlay muted loop playsInline className={styles.video} />)
+                : (<video  autoPlay muted loop playsInline className={styles.video}>
+                      <source src={item.src} type="video/mp4" />
+                    </video>)
                 }
                 
                 <div className={styles.overlay} data-text>
