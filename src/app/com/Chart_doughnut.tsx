@@ -12,15 +12,15 @@ const Chart_doughnut = () => {
       data={{
         labels: doughnutData.labels,
         datasets: [{
-          label: '취업률',
+          label: '브랜드 구매율',
           data: doughnutData.values,
-          cutout: '30%',
           backgroundColor: ['#ff3f3fff', '#2d8000ff', '#028d76ff', '#fca608ff']
         }]
       }}
       options={{
         responsive: true,
         maintainAspectRatio: false,
+        cutout: '30%',
       }}
     />
   )
