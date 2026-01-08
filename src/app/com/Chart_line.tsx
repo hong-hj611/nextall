@@ -14,7 +14,7 @@ const Chart_line = () => {
       data = {{
         labels: lineData.labels,  // 이름이 같을땐 값을 안써도 된다
         datasets: [{
-          label: '요청 수',
+          label: '방문자 수',
           data: lineData.values,
           tension: 0.3,
           backgroundColor: 'darkgreen'

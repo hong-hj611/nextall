@@ -1,7 +1,14 @@
 .signupSection {
-  width: 100%;
-  text-align: center;
-  margin-top: 100px;
+  // width: 100%;
+  // text-align: center;
+  // margin-top: 100px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 
   .signupInfo {
     width: 400px;
@@ -29,7 +36,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #fff;
+          background-color: #eee;
           border: 1px solid #111;
           font-weight: bold;
           color: #111;

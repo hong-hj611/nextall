@@ -13,9 +13,9 @@ const Chart_bar = () => {
       data = {{
         labels: barData.labels, // x축값
         datasets: [{    // y축값
-          label: '요청율',
+          label: '구매율',
           data: barData.values,
-          backgroundColor: 'darkgreen'
+          backgroundColor: '#0f1183ff'
         }]
       }}
       options={{

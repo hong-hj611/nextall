@@ -15,7 +15,7 @@ const Chart_doughnut = () => {
           label: '취업률',
           data: doughnutData.values,
           cutout: '30%',
-          backgroundColor: ['#faa', '#af0', '#0ca', '#ffcc26ff']
+          backgroundColor: ['#ff3f3fff', '#2d8000ff', '#028d76ff', '#fca608ff']
         }]
       }}
       options={{

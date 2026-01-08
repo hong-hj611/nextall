@@ -13,9 +13,10 @@ const Chart_pie = () => {
       data={{
         labels: pieData.labels,
         datasets: [{
-          label: '연령별 지원자 비율0',
+          label: '연령별 구매율',
           data: pieData.values,
-          backgroundColor: ['#faa', 'rgba(83, 228, 0, 1)', 'rgba(3, 206, 172, 1)', '#ffcc26ff']
+          backgroundColor: ['#ffaaaaff', '#46c502ff', '#00ccaaff', '#ffcc26ff']
+
         }]
       }}
       options={{

@@ -1,0 +1,42 @@
+.rollingWrap {
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: #0f0f0f;
+  border-top: 1px solid #333;
+
+  .track {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    animation: rolling 100s linear infinite;
+
+    .imgBox {
+      flex-shrink: 0;
+      margin-right: 24px;
+      // border: 2px solid #fff;
+      // display: block;
+
+      img {
+        border-radius: 12px;
+        object-fit: cover;
+        border: 2px solid #fff;
+      display: block;
+      }
+    }
+  }
+}
+
+@keyframes rolling {
+  0% { transform: translateX(0);}
+  100% { transform: translateX(-50%);}
+}
+@media (max-width: 768px) {
+  .rollingWrap {
+    height: 140px;
+  }
+}
