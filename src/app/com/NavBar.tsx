@@ -34,7 +34,7 @@ const NavBar = () => {
         <nav className={styles.nav}>
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          {/* <Link href='/board'>게시판</Link> */}
+          {/* <Link href='/board'>Board</Link> */}
           {!isLogin && (   // 로그인 O 
             <>
               <Link href="/login">Login</Link>
@@ -47,7 +47,7 @@ const NavBar = () => {
                 Logout
               </button>
               <Link href="/mypage">
-                마이페이지 ({user.displayName ?? '사용자'}님)
+                Mypage ({user.displayName ?? '사용자'}님)
               </Link>
             </>
           )}
